@@ -1,0 +1,4 @@
+docker run --name manager_salary_db -e POSTGRES_USER=manager_salary_project -e POSTGRES_PASSWORD=password 
+-p 5432:5432 -d postgres
+
+psql -h localhost -p 5432 -U manager_salary_project

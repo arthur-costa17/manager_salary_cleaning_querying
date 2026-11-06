@@ -1,0 +1,10 @@
+CREATE TABLE manager_entries (primary_key INT PRIMARY KEY,"timestamp" TIMESTAMP, age_group VARCHAR(255)
+, industry VARCHAR(255), job_title VARCHAR(255), job_title_context VARCHAR(1000), annual_salary DECIMAL(15,2)
+, extra_annual_salary DECIMAL(15,2), currency VARCHAR(255), other_currency VARCHAR(255)
+, income_context VARCHAR(100000), country VARCHAR(255), usa_state VARCHAR(255)
+, city VARCHAR(255),total_work_experience VARCHAR(255), related_work_experience VARCHAR(255)
+, highest_education VARCHAR(255), gender VARCHAR(255), race VARCHAR(255)  )
+;
+
+\copy manager_entries FROM '/Users/arthurcosta17/Projects/Manager salaries/data/manager_salary_data_cleaned.csv' 
+WITH (FORMAT csv, HEADER);
