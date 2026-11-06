@@ -1,0 +1,7 @@
+There are a few problems with the data, even after cleaning.
+
+1. There are people work across several American states, meaning their entries for usa_state can have multiple states inside them. This is quiter annoying when querying.
+
+2. There are some data entries which have an annual salary of like 35. Not 35000, just 35.
+
+3. 
